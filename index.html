@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cartao virtual</title>
+	<link href="css/style.css" rel="stylesheet" />
+	<meta charset="utf-8" />
+	<script src="js/jquery.js"></script>
+	<script src="js/functions.js"></script>
+	
+</head>
+<body>
+	
+	<div class="lado">
+		<div class="frente">
+			<img src="/images/frente.png"/>		
+			<svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+		</div>
+		<div class="verso">
+			<img src="/images/verso.png"/>
+		</div>
+	</div>	
+	<div class="formulario">
+		<form class="cardform">
+			
+			<div class="cardname">			
+						<label for="name">Nome impresso no cartao</label>
+						<input type="text" id="name" placeholder="Nome Impresso No Cartao"/>
+						<label for="Numero">Numero Impresso No Cartao</label>
+						<input type="text" id="numero" placeholder="Numero Impresso No Cartao"/>
+			</div>	
+			<div class="mes">
+				<label for="data1">Ano</label>	
+				<label for="data">Mes</label>
+				<input type="text" id="data" placeholder="Mes"/>
+				<input type="text" id="data1" placeholder="Ano"/>
+			</div>	
+			<div class="cvc">	
+				<label for="cvc">CVC</label>
+				<input type="text" id="cvc" placeholder="CVC"/>
+			</div>	
+			<div class="confirm">
+				<input type="submit" value="confirm" id="confirm"/>
+			</div>
+		</form>
+
+	</div>
+</body>
+</html>

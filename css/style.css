@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.frente svg{
+   position: absolute;
+   top: 20%;
+   left: 10%;
+}
+.frente img{
+    position: absolute;
+    width: 35vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -110%);
+}
+
+.verso img{
+    position: absolute;
+    width: 35vw;
+    top: 50%;
+    left: 18%;
+    
+}
+
+
+.lado{
+    
+    float: left;
+    width: 30vw;
+    height: 100vh;
+    background: url(../images/lado.png);
+    display: flex;
+}
+.formulario{
+    float: right;
+    background-color: transparent;
+    width: 70vw;
+    height: 100vh;
+    text-transform: uppercase;
+}    
+
+form{
+    position: relative;
+    transform: translate(-25%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: transparent;
+    width: 60%;
+    
+    
+}   
+label{
+    color: black;
+    padding-bottom: 0.5ch;
+}
+
+.cardname{
+    display: flex;
+    padding: 1rem 0;
+    flex-direction: column;
+    
+    
+}
+label[for=Numero], label[for=name]{
+    margin-left: 4ch;
+    margin-top: 5px;
+}
+#name, #numero{
+    margin-left: 5ch;
+    display: flex;
+    width: 82%;
+    height: 5vh;
+    border-radius: 10px;
+    outline: none;
+    border: 0.3ch solid #ccc;
+    text-align: center;
+    
+}
+#numero{
+    margin-bottom: -10px;
+}
+
+
+#name:focus, #numero:focus, #data:focus, #data1:focus, #cvc:focus{
+    border: 0.3ch solid #6c5681;
+    text-align: center;
+}
+
+.mes{
+    padding: 1rem 0;
+    padding-bottom: 5px;
+}
+
+#data{
+    margin-left: 5ch;
+}
+#data, #data1{
+    width: 15%;
+    height: 5vh;
+    border-radius: 10px;
+    border: 0.3ch solid #ccc;
+    text-align: center;
+    outline: none;
+}
+label[for=data]{
+    display: flex;
+    margin-left: 5ch;
+}
+
+label[for=data1]{
+    display: flex;
+    margin-left: 11ch;
+    margin-bottom: -26px;
+    
+}
+
+.cvc{
+   margin-top: -62.5px;
+   margin-left: 200px; 
+   
+}
+
+#cvc{
+    display: flex;
+    flex-direction: column;
+}
+#cvc{
+    width: 18vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: 0.3ch solid #ccc;
+    text-align: center;
+    outline: none;
+}
+label[for=cvc]{   
+    display: flex;
+    margin-left: 7ch;
+}
+.confirm{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#confirm{
+    width: 80%;
+    margin-top: 15px;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: #220930;
+    color: white;
+    text-transform: uppercase; 
+}
